@@ -1,0 +1,70 @@
+# --- Python 运行时环境 ---
+# 字节码文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C 扩展（编译后的库）
+*.so
+
+# 虚拟环境目录 (venv, env, .venv)
+venv/
+env/
+.venv/
+ENV/
+
+# Jupyter Notebook 检查点
+.ipynb_checkpoints
+
+# pytest 缓存
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- 依赖管理 ---
+# pip 安装列表 (建议只保留 requirements.txt，不提交自动生成的 freeze 文件)
+# requirements.txt 是你手动维护的，建议保留在版本控制中
+*.egg-info/
+dist/
+build/
+eggs/
+
+# --- IDE 和编辑器配置 ---
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# PyCharm / IntelliJ
+.idea/
+*.iml
+
+# --- 操作系统生成的文件 ---
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# --- 敏感数据与环境变量 (非常重要!) ---
+# 包含密码、API Key、数据库连接字符串的文件
+.env
+.env.local
+.env.production
+config.ini
+secrets.json
+*.pem
+*.key
+
+# --- 数据文件 (可选) ---
+# 如果数据集很大，通常不建议放入 Git，可以取消下面的注释
+# data/
+# datasets/
